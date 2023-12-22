@@ -24,6 +24,7 @@ import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from '
 import AddIcon from '@mui/icons-material/Add';
 import CloseIcon from '@mui/icons-material/Close';
 import Footer from '../components/Footer'
+import Form from '../components/Form'
 
 const Home = () => {
 
@@ -47,10 +48,10 @@ const Home = () => {
         <div className='frame relative'>
 
           <div className='flex justify-center items-center pt-32 lgg:pt-20'>
-          <div className='flex flex-col gap-12 lgg:gap-8 items-center'>
+          <div className='flex flex-col gap-12 lgg:gap-8 items-center ssm:px-1'>
               <h1 className='font-semibold text-6xl mdd:text-5xl ssm:text-3xl text-white text-center'>A Digital Product Studio <br/>that will Work</h1>
-              <div className='bg-greyAccent-550 px-8 ssm:px-2 mdd:px-4 py-5 text-[#98989A] border border-greyAccent-600 rounded-lg'>
-                  <p className='ssm:text-sm ssm:flex ssm:flex-wrap ssm:justify-center ssm:gap-1 ssm:items-center'>For <span className='px-3 py-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Startups</span>, <span className='px-3 py-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Enterprise Leaders</span>, <span className='px-3 py-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Media & Publishers</span> and <span className='px-3 py-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Social Good</span></p>
+              <div className='bg-greyAccent-550 px-8 mdd:px-4 py-5 ssm:py-2 ssm:px-0 text-[#98989A] border border-greyAccent-600 rounded-lg'>
+                  <p className='ssm:text-sm ssm:flex ssm:flex-wrap ssm:justify-center ssm:gap-1 ssm:items-center'>For <span className='px-3 py-2 ssm:px-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Startups</span>, <span className='px-3 py-2 ssm:px-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Enterprise Leaders</span>, <span className='px-3 py-2 ssm:px-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Media & Publishers</span> and <span className='px-3 py-2 ssm:px-2 bg-greyAccent-600 rounded-md text-slate-300 mx-1'>Social Good</span></p>
               </div>
               <div className='mt-6 flex gap-6'>
                 <button className='px-5 py-3 bg-[#242424] rounded text-white'>Our Works</button>
@@ -66,12 +67,12 @@ const Home = () => {
         </div>
        <div>
          <div className="flex justify-between items-center py-8 px-20 lgg:px-0 mdd:flex-wrap mdd:gap-4 mdd:justify-start">
-              <img src={zapier} alt="" className="px-8 py-4 object-cover"/>
-              <img src={spotify} alt="" className="px-8 py-4 object-cover"/>
-              <img src={zoom} alt="" className="px-8 py-4 object-cover"/>
-              <img src={slack} alt="" className="px-8 py-4 object-cover"/>
-              <img src={amazon} alt="" className="px-8 py-4 object-cover"/>
-              <img src={adobe} alt="" className="px-8 py-4 object-cover"/>
+              <img src={zapier} alt="" className="px-8 py-4 ssm:px-3 ssm:py-2 object-cover"/>
+              <img src={spotify} alt="" className="px-8 py-4 ssm:px-3 ssm:py-2 object-cover"/>
+              <img src={zoom} alt="" className="px-8 py-4 ssm:px-3 ssm:py-2 object-cover"/>
+              <img src={slack} alt="" className="px-8 py-4 ssm:px-3 ssm:py-2 object-cover"/>
+              <img src={amazon} alt="" className="px-8 py-4 ssm:px-3 ssm:py-2 object-cover"/>
+              <img src={adobe} alt="" className="px-8 py-4 ssm:px-3 ssm:py-2 object-cover"/>
           </div>
 
           <div>
@@ -483,90 +484,7 @@ const Home = () => {
                 <div className="h-[480px]">
                   <img src={thankyou} alt="" className="h-full w-full object-cover brightness-75"/>
                 </div>
-                <form className='flex justify-center'>
-                  <div className='border border-greyAccent-400 p-16 ssm:p-8 w-[800px] ssm:w-full flex flex-col gap-8'>
-                      <div className='flex gap-8 rounded-md ssm:flex-wrap'>
-                        <div className='border border-greyAccent-400 px-8 py-5 flex flex-col gap-4 grow rounded-md'>
-                          <p className='text-white'>Full Name</p>
-                          <input type="text" placeholder='Type here' className='border-b border-greyAccent-400 pb-2 bg-transparent outline-none text-greyAccent-800'/>
-                        </div>
-                        <div className='border border-greyAccent-400 px-8 py-5 flex flex-col gap-4 grow rounded-md'>
-                          <p className='text-white'>Email</p>
-                          <input type="text" placeholder='Type here' className='border-b border-greyAccent-400 pb-2 bg-transparent outline-none text-greyAccent-800'/>
-                        </div>
-                      </div>
-                      <div className='p-8 ssm:p-4 flex flex-col gap-8 border border-greyAccent-400 rounded-md'>
-                          <p className='font-medium text-lg text-white'>Why are you contacting us?</p>
-                          <div className='flex flex-wrap ssm:gap-3'>
-                            <label className='flex gap-2 w-1/2 mb-4 relative cursor-pointer ssm:w-full'>
-                              {/* left: 9px;
-                                  top: 5px;
-                                  width: 5px;
-                                  height: 10px;
-                                  border: solid white;
-                                  border-width: 0 3px 3px 0;
-                                  -webkit-transform: rotate(45deg); */}
-                              <input 
-                                type="checkbox" 
-                                className='bg-[#1E1E1E] rounded w-6 h-6 border border-greyAccent-400' 
-                                id='check1' 
-                                />
-                              <span className='bg-[#1E1E1E] border border-greyAccent-400 absolute left-0 top-0 w-[25px] h-[25px] checkmark'></span>
-                              <label className='text-greyAccent-800' htmlFor='check1'>Web Design</label>
-                            </label>
-                            <label className='flex gap-2 w-1/2 mb-4 relative cursor-pointer ssm:w-full'>
-                              <input 
-                                type="checkbox" 
-                                className='bg-[#1E1E1E] rounded w-6 h-6 border border-greyAccent-400' 
-                                id='check2' 
-                                />
-                              <span className='bg-[#1E1E1E] border border-greyAccent-400 absolute left-0 top-0 w-[25px] h-[25px] checkmark'></span>
-                              <label className='text-greyAccent-800' htmlFor='check2'>Collaboration</label>
-                            </label>
-                            <label className='flex gap-2 w-1/2 mb-4 relative cursor-pointer ssm:w-full'>
-                              <input 
-                                type="checkbox" 
-                                className='bg-[#1E1E1E] rounded w-6 h-6 border border-greyAccent-400' 
-                                id='check3' 
-                                />
-                              <span className='bg-[#1E1E1E] border border-greyAccent-400 absolute left-0 top-0 w-[25px] h-[25px] checkmark'></span>
-                              <label className='text-greyAccent-800' htmlFor='check3'>Mobile App Design</label>
-                            </label>
-                            <label className='flex gap-2 w-1/2 mb-4 relative cursor-pointer ssm:w-full'>
-                              <input 
-                                type="checkbox" 
-                                className='bg-[#1E1E1E] rounded w-6 h-6 border border-greyAccent-400' 
-                                id='check4' 
-                                />
-                              <span className='bg-[#1E1E1E] border border-greyAccent-400 absolute left-0 top-0 w-[25px] h-[25px] checkmark'></span>
-                              <label className='text-greyAccent-800' htmlFor='check4'>Others</label>
-                            </label>
-                          </div>
-                      </div> 
-                      <div className='p-8 flex flex-col gap-8 border border-greyAccent-400 rounded-md'>
-                        <div className='flex flex-col gap-2'>
-                          <p className='text-white font-medium'>Your Budget</p>
-                          <p className='text-greyAccent-800'>Slide to indicate your budget range</p>
-                        </div>
-                        <div>
-                          <input 
-                            type="range" 
-                            max="10000" 
-                            min="500" 
-                            className=''/>
-                        </div>
-                      </div>
-                      <div className='p-8 flex flex-col gap-8 border border-greyAccent-400 rounded-md'>
-                      <div className=' flex flex-col gap-4 grow rounded-md'>
-                            <h1 className='font-medium text-2xl text-white'>Your Message</h1>
-                            <input type="text" placeholder='Type here' className='border-b border-greyAccent-400 pb-2 bg-transparent outline-none text-greyAccent-800'/>
-                          </div>
-                      </div>
-                      <div className='grid place-content-center'>
-                        <button className='rounded bg-greenAccent-500 px-12 py-5 text-lg font-medium ssm:px-8 ssm:py-2' type='submit'>Submit</button>
-                      </div>
-                  </div>
-                </form>
+                <Form/>
             </div>
           </div>
        </div>
