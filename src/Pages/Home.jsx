@@ -23,7 +23,6 @@ import { useState } from 'react'
 import { Accordion, AccordionDetails, AccordionSummary, Box, Typography } from '@mui/material'
 import AddIcon from '@mui/icons-material/Add';
 import CloseIcon from '@mui/icons-material/Close';
-import Footer from '../components/Footer'
 import Form from '../components/Form'
 
 const Home = () => {

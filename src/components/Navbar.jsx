@@ -20,10 +20,10 @@ const Navbar = () => {
                 <NavLink to="/work">Work</NavLink>
                 <NavLink to="/process">Process</NavLink>
                 <NavLink to="/about">About</NavLink>
-                <NavLink to="/g">Careers</NavLink>
+                <NavLink to="/career">Careers</NavLink>
             </div>
             <div className='flex gap-1'>
-                <div className='px-5 py-3 lgg:px-3 lgg:py-2 bg-greenAccent-500 rounded mdd:hidden'>Contact Us</div>
+                <Link to="/contact" className='px-5 py-3 lgg:px-3 lgg:py-2 bg-greenAccent-500 rounded mdd:hidden'>Contact Us</Link>
                 <div className='text-greyAccent-900'>
                 <div className='z-30 relative hidden mdd:block' onClick={() => setOpen(prev => !prev)}>
                     {open
@@ -39,7 +39,8 @@ const Navbar = () => {
                                 <Link to="/work" className='border-b border-greyAccent-600 hover:scale-110 duration-200'>Work</Link>
                                 <Link to="/process" className='border-b border-greyAccent-600 hover:scale-110 duration-200'>Process</Link>
                                 <Link to="/about" className='border-b border-greyAccent-600 hover:scale-110 duration-200'>About</Link>
-                                <Link to="/careers" className='border-b border-greyAccent-600 hover:scale-110 duration-200'>Careers</Link>
+                                <Link to="/career" className='border-b border-greyAccent-600 hover:scale-110 duration-200'>Careers</Link>
+                                <Link to="/contact" className='border-b border-greyAccent-600 hover:scale-110 duration-200'>Contact</Link>
                             </div>
                         </div>
                     }

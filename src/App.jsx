@@ -6,6 +6,8 @@ import Services from "./Pages/Services";
 import Work from "./Pages/Work";
 import Process from "./Pages/Process";
 import About from "./Pages/About";
+import Career from "./Pages/Career";
+import Contact from "./Pages/Contact";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -33,7 +35,15 @@ const App = () => {
             {
               path: "about",
               element: <About/>
-            }
+            },
+            {
+              path: "career",
+              element: <Career/>
+            },
+            {
+              path: "contact",
+              element: <Contact/>
+            },
         ]
       }
     ]
